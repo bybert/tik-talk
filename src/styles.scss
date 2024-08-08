@@ -1,4 +1,5 @@
 @import "fonts";
+@import "margins";
 
 :root {
   --dark-color: #000000;
@@ -8,17 +9,18 @@
 
 *,
 *:before,
-*:after{
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 
-
 body {
-  background-color: var(--dark-color);
+  font-family: "JetBrains Mono", sans-serif;
+  background: var(--dark-color);
   color: var(--light-color);
+  background-image: url(/assets/imgs/background.png);
 }
 
 .skill-tag {
@@ -33,6 +35,7 @@ body {
 }
 
 .btn {
+  width: 100%;
   padding: 10px 20px;
   background: var(--primary-color);
   border: none;
@@ -40,6 +43,13 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
+  cursor: pointer;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 800;
 }
 
 .h6 {
@@ -51,4 +61,26 @@ body {
 .subtitle {
   font-size: 14px;
   line-height: 20xp;
+}
+
+.tt-control-label {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tt-input {
+  //width: 100%;
+  margin-top: 8px;
+  display: block;
+  border: 1px solid var(--light-color);
+  border-radius: 4px;
+  padding: 12px 20px;
+  background: var(--dark-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "JetBrains Mono", sans-serif;
+  color: var(--light-color);
 }
