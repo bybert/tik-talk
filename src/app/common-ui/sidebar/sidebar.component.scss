@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  background: #000000;
+  padding: 20px 12px;
+}
+
+.main-menu-list {
+  display: grid;
+  grid-gap: 8px;
+  list-style: none;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 16px 1fr max-content;
+  padding: 16px 12px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: var(--light-color);
+  grid-gap: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "JetBrains Mono", sans-serif;
+  width: 100%;
+  text-align: left;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--dark-hover-color);
+    color: var(--primary-color);
+  }
+}
