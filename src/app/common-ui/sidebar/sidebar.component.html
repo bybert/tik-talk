@@ -3,22 +3,15 @@
      height="74px"
      src="/assets/svg/logo-small.svg"
      width="61px">
-<nav>
+<nav class="mb20">
   <ul class="main-menu-list">
-    <li>
-      <button class="menu-item">
-        <img alt="" src="/assets/svg/home.svg"> <span>Моя страница</span>
-      </button>
-    </li>
-    <li>
-      <button class="menu-item">
-        <img alt="" src="/assets/svg/chat.svg"> <span>Чаты</span>
-      </button>
-    </li>
-    <li>
-      <button class="menu-item">
-        <img alt="" src="/assets/svg/search.svg"> <span>Поиск</span>
-      </button>
-    </li>
+    @for (menuItem of menuItems; track menuItem) {
+      <li>
+        <a class="menu-item" [routerLink]=[menuItems]>
+          <svg [icon]=menuItem.icon></svg>
+          <span>{{ menuItem.label }}</span>
+        </a>
+      </li>
+    }
   </ul>
 </nav>
