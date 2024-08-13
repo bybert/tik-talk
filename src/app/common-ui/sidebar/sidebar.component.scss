@@ -43,5 +43,22 @@
   height: 16px;
 }
 
+.to-subscribers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+.to-subscribers-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.to-subscribers-icon {
+  width: 18px;
+  height: 18px;
+}
+
 
 
