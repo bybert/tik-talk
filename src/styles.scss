@@ -20,6 +20,7 @@
 
 
 body {
+  height: 100dvh;
   font-family: "JetBrains Mono", sans-serif;
   background: var(--dark-color);
   color: var(--light-color);
@@ -89,7 +90,13 @@ body {
   line-height: 16px;
   font-weight: 500;
   margin-left: 28px;
+}
 
+.regular {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .tt-control-label {
